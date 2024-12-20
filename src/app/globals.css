@@ -80,3 +80,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}

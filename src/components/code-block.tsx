@@ -29,7 +29,7 @@ const tokenAddress = await agent.deployToken({
 console.log('Token deployed:', tokenAddress);`
 
   return (
-    <pre className={`p-6 font-mono text-sm text-cyan-400 overflow-x-auto ${className}`}>
+    <pre className={`p-6 font-mono text-sm text-[#1BE1FF] overflow-x-auto ${className}`}>
       <TypeAnimation
         sequence={[codeString]}
         wrapper="div"
