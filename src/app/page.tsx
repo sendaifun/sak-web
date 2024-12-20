@@ -26,24 +26,24 @@ export default function Page() {
             >
               Features
             </Link>
-            <Link
+            {/* <Link
               href="#"
               className="text-gray-300 hover:text-[#1BE1FF] transition-colors"
             >
               Docs
-            </Link>
+            </Link> */}
             <Link
               href="#"
               className="text-gray-300 hover:text-[#1BE1FF] transition-colors"
             >
               Community
             </Link>
-            <Link
+            {/* <Link
               href="#"
               className="text-gray-300 hover:text-[#1BE1FF] transition-colors"
             >
               Enterprise
-            </Link>
+            </Link> */}
           </div>
         </div>
       </nav>
@@ -76,32 +76,32 @@ export default function Page() {
       </section>
 
       {/* Features Grid */}
-      {/* <section className="container mx-auto px-4 py-24">
+      <section className="container mx-auto px-4 py-24">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <FeatureCard
             title="Create Tokens"
             description="Deploy custom tokens with advanced AI-powered features"
-            color="cyan"
+            color="yellow"
           />
           <FeatureCard
             title="Deploy NFT Collections"
             description="Launch NFT collections with intelligent minting mechanisms"
-            color="yellow"
+            color="cyan"
           />
           <FeatureCard
             title="Trade Assets"
             description="Smart trading powered by AI market analysis"
-            color="cyan"
+            color="mint"
           />
           <FeatureCard
             title="Lend on Lulu"
             description="Automated lending protocols with AI risk assessment"
-            color="yellow"
+            color="red"
           />
           <FeatureCard
             title="Trade NFTs"
             description="AI-assisted NFT trading and valuation"
-            color="cyan"
+            color="purple"
           />
           <FeatureCard
             title="Transfer Assets"
@@ -110,9 +110,9 @@ export default function Page() {
           />
         </div>
       </section>
-      <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
+      <div className="relative flex w-full flex-col items-center justify-center overflow-hidden rounded-lg border-l bg-background md:shadow-xl">
         <span className="pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b from-[#ffd319] via-[#ff2975] to-[#8c1eff] bg-clip-text text-center text-7xl font-bold leading-none tracking-tighter text-transparent"></span>
-      </div> */}
+      </div>
     </div>
   );
 }
