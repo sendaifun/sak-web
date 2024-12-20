@@ -8,7 +8,7 @@ export default function Page() {
     // <div className="min-h-screen bg-gradient-to-br from-black to-gray-900">
     <div className="min-h-screen relative">
       <div className="absolute inset-0 -z-10">
-        <div className="h-full bg-[url('/assets/bgs/home.svg')] bg-repeat-y bg-top"></div>
+        <div className="min-h-full bg-[url('/assets/bgs/home.svg')] bg-repeat bg-top"></div>
       </div>
       {/* Navigation */}
       <nav className="border-b border-gray-800">
