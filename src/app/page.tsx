@@ -1,15 +1,16 @@
 "use client";
 
+import logoSendAI from "@/assets/logos/sendai.svg";
+import logoSendaiWhite from "@/assets/logos/sendaiWhite.svg";
 import { CodeBlock } from "@/components/code-block";
 import { FeatureCard } from "@/components/feature-card";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import logoSendAI from "@/assets/logos/sendai.svg";
 
+import logoAgentKit from "@/assets/logos/agentKitLogo.svg";
 import logoWebsite from "@/assets/logos/websiteLogo.svg";
 import logoX from "@/assets/logos/xLogo.svg";
-import logoAgentKit from "@/assets/logos/agentKitLogo.svg";
 export default function Page() {
   const featuresArray = [
     {
@@ -106,10 +107,7 @@ export default function Page() {
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-4">
                 <Button
                   onClick={() => {
-                    window.open(
-                      "https://solanaagentkit.xyz/",
-                      "_blank"
-                    );
+                    window.open("https://solanaagentkit.xyz/", "_blank");
                   }}
                   className="font-ppsans bg-[#1BE1FF] hover:bg-cyan-500 text-black font-bold w-full sm:w-auto"
                 >
@@ -117,7 +115,10 @@ export default function Page() {
                 </Button>
                 <Button
                   onClick={() => {
-                    window.open("https://github.com/sendaifun/solana-agent-kit", "_blank");
+                    window.open(
+                      "https://github.com/sendaifun/solana-agent-kit",
+                      "_blank"
+                    );
                   }}
                   className="font-ppsans border-[#1BE1FF] text-[#1BE1FF] hover:bg-[#1BE1FF]/10 w-full sm:w-auto"
                 >
@@ -149,6 +150,9 @@ export default function Page() {
       </section>
       <div className="relative flex w-full flex-col items-center justify-center overflow-hidden rounded-lg border-l bg-background md:shadow-xl">
         <span className="pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b from-[#ffd319] via-[#ff2975] to-[#8c1eff] bg-clip-text text-center text-7xl font-bold leading-none tracking-tighter text-transparent"></span>
+      </div>
+      <div className="flex justify-center items-center p-4">
+        <Image src={logoSendaiWhite} alt="Sendai" className="w-32 " />
       </div>
     </div>
   );
