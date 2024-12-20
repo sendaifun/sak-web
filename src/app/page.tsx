@@ -1,23 +1,25 @@
 import { CodeBlock } from "@/components/code-block";
 import { FeatureCard } from "@/components/feature-card";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import Link from "next/link";
-
+import logoSendAI from "@/assets/logos/sendai.svg"
 export default function Page() {
   return (
     // <div className="min-h-screen bg-gradient-to-br from-black to-gray-900">
-    <div className="min-h-screen relative">
+    <div className="min-h-screen min-w-full relative overflow-x-hidden">
       <div className="absolute inset-0 -z-10">
-        <div className="min-h-full bg-[url('/assets/bgs/home.svg')] bg-repeat bg-top"></div>
+        <div className="min-h-full min-w-full bg-[url('/assets/bgs/home.svg')] bg-repeat bg-top"></div>
       </div>
       {/* Navigation */}
       <nav className="border-b border-gray-800">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <Link
             href="/"
-            className="text-md font-relish font-bold text-[#1BE1FF] tracking-wider"
+            className="text-sm font-relish font-bold text-[#1BE1FF] tracking-wider"
           >
-            SOLANA AGENT KIT
+            <Image src={logoSendAI} alt="Solana Agent Kit Logo" />
+            {/* SOLANA AGENT KIT */}
           </Link>
           <div className="space-x-8">
             <Link
@@ -49,28 +51,33 @@ export default function Page() {
       </nav>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-24">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
-            <h1 className="font-ppsans text-5xl md:text-6xl font-bold text-white leading-tight">
-              Build AI-Powered Applications on Solana{" "}
-              <span className="text-[#1BE1FF]">Effortlessly</span>
-            </h1>
-            <p className="font-departureMono text-xl text-gray-400">
-              A powerful toolkit for integrating AI agents with Solana
-              blockchain.
-            </p>
-            <div className="space-x-4">
-              <Button className="font-ppsans bg-[#1BE1FF] hover:bg-cyan-500 text-black font-bold">
-                Get Started
-              </Button>
-              <Button className="font-ppsans border-[#1BE1FF] text-[#1BE1FF] hover:bg-[#1BE1FF]/10">
-                View Documentation
-              </Button>
+      <section className="w-full overflow-hidden">
+        <div className="container max-w-screen-xl mx-auto px-4 py-12 md:py-24">
+          <div className="max-w-full mx-auto grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
+            {/* Left Column */}
+            <div className="space-y-6 md:space-y-8">
+              <h1 className="font-ppsans text-3xl md:text-6xl font-bold text-white leading-tight">
+                Build AI-Powered Applications on Solana{" "}
+                <span className="text-[#1BE1FF]">Effortlessly</span>
+              </h1>
+              <p className="font-departureMono text-md md:text-xl text-gray-400">
+                A powerful toolkit for integrating AI agents with Solana
+                blockchain.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-4">
+                <Button className="font-ppsans bg-[#1BE1FF] hover:bg-cyan-500 text-black font-bold w-full sm:w-auto">
+                  Get Started
+                </Button>
+                <Button className="font-ppsans border-[#1BE1FF] text-[#1BE1FF] hover:bg-[#1BE1FF]/10 w-full sm:w-auto">
+                  View Documentation
+                </Button>
+              </div>
             </div>
-          </div>
-          <div className="relative">
-            <CodeBlock className="bg-black border border-[#1BE1FF]/20 rounded-lg shadow-2xl" />
+
+            {/* Right Column */}
+            <div className="w-full overflow-hidden">
+              <CodeBlock className="bg-black border border-[#1BE1FF]/20 rounded-lg shadow-2xl" />
+            </div>
           </div>
         </div>
       </section>
