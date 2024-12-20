@@ -6,6 +6,7 @@ import {
   PPSans,
   relishGargler,
 } from "@/assets/fonts/fonts-custom";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -50,6 +51,7 @@ export default function RootLayout({
         className={`${relishGargler.variable} ${PPSans.variable} ${departureMono.variable} ${inter.className}`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
