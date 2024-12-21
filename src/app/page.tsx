@@ -24,6 +24,8 @@ export default function Page() {
       description: "Collection deployment and NFT minting using Metaplex",
       color: "cyan",
     },
+
+    
     {
       title: "Send ZK Compressed Airdrops",
       description:
