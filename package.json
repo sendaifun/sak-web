@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "solana-agent-kit-landing-page",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -15,9 +15,9 @@
     "clsx": "^2.1.1",
     "lucide-react": "^0.469.0",
     "next": "13.5.7",
+    "prism-react-renderer": "^2.4.1",
     "react": "^18",
     "react-dom": "^18",
-    "react-type-animation": "^3.2.0",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7"
   },
