@@ -120,7 +120,7 @@ export default function Page() {
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-4">
                 <Button
                   onClick={() => {
-                    window.open("https://docs.solanaagentkit.xyz/", "_blank");
+                    window.open("https://github.com/sendaifun/solana-agent-kit", "_blank");
                   }}
                   className="font-ppsans bg-[#1BE1FF] hover:bg-cyan-500 text-black font-bold w-full sm:w-auto"
                 >
