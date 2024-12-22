@@ -2,9 +2,15 @@ interface FeatureCardProps {
   title: string;
   description: string;
   color: "cyan" | "yellow" | "mint" | "red" | "purple";
+  link?: string;
 }
 
-export function FeatureCard({ title, description, color }: FeatureCardProps) {
+export function FeatureCard({
+  title,
+  description,
+  color,
+  link,
+}: FeatureCardProps) {
   const getColors = (color: FeatureCardProps["color"]) => {
     const colors = {
       cyan: {
@@ -34,15 +40,17 @@ export function FeatureCard({ title, description, color }: FeatureCardProps) {
   const { border, text } = getColors(color);
 
   return (
-    <div
-      className={`p-6 border-l ${border} bg-black/50 rounded-sm backdrop-blur-sm 
+    <a href={link} target="_blank" rel="noopener noreferrer">
+      <div
+        className={`p-6 border-l ${border} bg-black/50 rounded-sm backdrop-blur-sm 
       hover:bg-black/70 transition-colors group cursor-pointer`}
-    >
-      <h3 className={`text-xl font-bold ${text} mb-2`}>{title}</h3>
-      <p className="text-gray-400 group-hover:text-gray-300 transition-colors">
-        {description}
-      </p>
-    </div>
+      >
+        <h3 className={`text-xl font-bold ${text} mb-2`}>{title}</h3>
+        <p className="text-gray-400 group-hover:text-gray-300 transition-colors">
+          {description}
+        </p>
+      </div>
+    </a>
   );
 }
 

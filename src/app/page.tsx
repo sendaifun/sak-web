@@ -11,6 +11,8 @@ import Link from "next/link";
 import logoAgentKit from "@/assets/logos/agentKitLogo.svg";
 import logoWebsite from "@/assets/logos/websiteLogo.svg";
 import logoX from "@/assets/logos/xLogo.svg";
+import logoGithub from "@/assets/logos/githubLogo.svg";
+
 export default function Page() {
   const featuresArray = [
     {
@@ -18,36 +20,41 @@ export default function Page() {
       description:
         "Deploy SPL tokens or launch directly on Pump.fun. Swap any token using Jupiter.",
       color: "yellow",
+      link: "https://github.com/sendaifun/solana-agent-kit?tab=readme-ov-file#deploy-a-new-token",
     },
     {
       title: "Launch and Mint NFTs",
       description: "Collection deployment and NFT minting using Metaplex",
       color: "cyan",
+      link: "https://github.com/sendaifun/solana-agent-kit?tab=readme-ov-file#create-nft-collection",
     },
 
-    
     {
       title: "Send ZK Compressed Airdrops",
       description:
         "Airdrop at 1000x lower cost using Light Protocol and Helius",
       color: "mint",
+      link: "https://github.com/sendaifun/solana-agent-kit?tab=readme-ov-file#send-an-spl-token-airdrop-via-zk-compression",
     },
     {
       title: "Launch tokens on AMMs",
       description:
         "Create AMM pools on top Solana DEXs like Meteora, Raydium, and Orca",
       color: "red",
+      link: "https://github.com/sendaifun/solana-agent-kit?tab=readme-ov-file#-core-blockchain-features",
     },
     {
       title: "Execute Solana Blinks (Actions)",
       description:
         "Lend on Lulo or Play on SEND Arcade or stake your SOL for JupSOL",
       color: "purple",
+      link: "https://github.com/sendaifun/solana-agent-kit?tab=readme-ov-file#lend-tokens",
     },
     {
       title: "AI Integrations",
       description: "From Langchain to Open AI's GPT and DALL-E and more!",
       color: "cyan",
+      link: "https://github.com/sendaifun/solana-agent-kit?tab=readme-ov-file#quick-start",
     },
   ] as const;
 
@@ -117,9 +124,10 @@ export default function Page() {
                   }}
                   className="font-ppsans bg-[#1BE1FF] hover:bg-cyan-500 text-black font-bold w-full sm:w-auto"
                 >
-                  Get Started
+                  <Image src={logoGithub} alt="Sendai" className="w-4" />
+                  Star on Github
                 </Button>
-                <Button
+                {/* <Button
                   onClick={() => {
                     window.open(
                       "https://github.com/sendaifun/solana-agent-kit",
@@ -128,8 +136,9 @@ export default function Page() {
                   }}
                   className="font-ppsans border-[#1BE1FF] text-[#1BE1FF] hover:bg-[#1BE1FF]/10 w-full sm:w-auto"
                 >
+                <Image src={logoGithub} alt="Sendai" className="w-4" />
                   Star on Github
-                </Button>
+                </Button> */}
               </div>
             </div>
 
@@ -148,6 +157,7 @@ export default function Page() {
             <FeatureCard
               key={index}
               title={feature.title}
+              link={feature?.link}
               description={feature.description}
               color={feature.color}
             />
