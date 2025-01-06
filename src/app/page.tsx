@@ -12,6 +12,7 @@ import logoAgentKit from "@/assets/logos/agentKitLogo.svg";
 import logoWebsite from "@/assets/logos/websiteLogo.svg";
 import logoX from "@/assets/logos/xLogo.svg";
 import logoGithub from "@/assets/logos/githubLogo.svg";
+import logoDocs from "@/assets/logos/docsLogo.svg";
 
 export default function Page() {
   const featuresArray = [
@@ -79,6 +80,13 @@ export default function Page() {
             {/* SOLANA AGENT KIT */}
           </Link>
           <div className="space-x-8 flex ">
+          <Link
+              href="https://docs.solanaagentkit.xyz"
+              target="_blank"
+              className="text-gray-300 hover:text-[#1BE1FF] transition-colors"
+            >
+              <Image src={logoDocs} className="w-4 md:w-6" alt={""} />
+            </Link>
             <Link
               href="https://x.com/sendaifun"
               target="_blank"
