@@ -12,6 +12,7 @@ import logoAgentKit from "@/assets/logos/agentKitLogo.svg";
 import logoWebsite from "@/assets/logos/websiteLogo.svg";
 import logoX from "@/assets/logos/xLogo.svg";
 import logoGithub from "@/assets/logos/githubLogo.svg";
+import { LucideFile, LucideFileDown } from "lucide-react";
 
 export default function Page() {
   const featuresArray = [
@@ -127,18 +128,18 @@ export default function Page() {
                   <Image src={logoGithub} alt="Sendai" className="w-4" />
                   Star on Github
                 </Button>
-                {/* <Button
+                <Button
                   onClick={() => {
                     window.open(
-                      "https://github.com/sendaifun/solana-agent-kit",
+                      "https://docs.solanaagentkit.xyz",
                       "_blank"
                     );
                   }}
                   className="font-ppsans border-[#1BE1FF] text-[#1BE1FF] hover:bg-[#1BE1FF]/10 w-full sm:w-auto"
                 >
-                <Image src={logoGithub} alt="Sendai" className="w-4" />
-                  Star on Github
-                </Button> */}
+                  <LucideFile className="w-4" />
+                  View Docs
+                </Button>
               </div>
             </div>
 
